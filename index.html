@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ezzah Enterprises</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/Ezzah Logo Dark.png" alt="Ezzah Logo" class="site-logo-img" />
+        <h1 class="logo"><span class="logo-accent">Ezzah</span> Enterprises</h1>
+      </div>
+      <nav>
+        <a href="#showcase">Products</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <h2>Premium Thermal Rolls</h2>
+          <p>Trusted by restaurants and retailers for crisp prints, consistent quality and fast delivery. Single-product focus — we specialise in thermal rolls only.</p>
+          <div class="hero-features">
+            <span class="chip">Fast delivery</span>
+            <span class="chip">Bulk discounts</span>
+            <span class="chip">Quality guaranteed</span>
+          </div>
+          <a class="btn" href="#order">Order Now</a>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="carousel" aria-roledescription="carousel">
+            <div class="carousel-slide active">
+              <img src="images/bill-paper-roll.jpg" alt="Thermal receipt rolls - roll image 1" />
+            </div>
+            <div class="carousel-slide">
+              <img src="images/colour-thermal-paper-rolls.jpg" alt="Thermal receipt rolls - roll image 2" />
+            </div>
+            <div class="carousel-slide">
+              <img src="images/what-is-thermal-paper.jpg" alt="Thermal receipt rolls - roll image 3" />
+            </div>
+            <div class="carousel-slide">
+              <img src="images/color-thermal-paper-rolls.jpeg" alt="Thermal receipt rolls - roll image 4" />
+            </div>
+            <div class="carousel-slide">
+              <img src="images/thermal-600x560.png" alt="Thermal receipt rolls - roll image 5" />
+            </div>
+            <div class="carousel-dots" aria-hidden="true">
+              <button class="dot active" data-index="0"></button>
+              <button class="dot" data-index="1"></button>
+              <button class="dot" data-index="2"></button>
+              <button class="dot" data-index="3"></button>
+              <button class="dot" data-index="4"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="showcase" class="container showcase">
+      <h3>Thermal Rolls — what we offer</h3>
+      <div class="cards">
+        <article class="card card-prominent reveal">
+          <img src="images/image3.jpg" alt="Thermal rolls closeup" />
+          <div class="card-body">
+            <h4>Premium Thermal Rolls</h4>
+            <p>High-grade thermal paper engineered for clear, long-lasting receipts with minimal fading. Available in common widths and custom cuts on request.</p>
+            <ul class="features-list">
+              <li>Common widths: 57mm, 80mm</li>
+              <li>Core sizes: 9.5mm, 12.7mm (and others)</li>
+              <li>Bulk packing & express dispatch</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="order" class="container order-section">
+      <h3>Order Rolls</h3>
+      <p class="muted">Tell us the dimensions and quantity. We'll confirm availability and delivery.</p>
+      <div class="order-wrap">
+  <form id="order-form" class="form reveal form-panel" method="POST" action="https://formsubmit.co/padayattilbettyalan@gmail.com">
+        <div class="form-grid">
+          <input type="hidden" name="product_type" value="Thermal" />
+
+          <label>
+            Width (mm)
+            <input type="number" name="width_mm" min="10" required placeholder="e.g. 80" />
+            <small class="hint">Minimum 10 mm</small>
+          </label>
+
+          <label>
+            Length (mm)
+            <input type="number" name="length_mm" min="1" step="1" required placeholder="e.g. 80"/>
+          </label>
+
+          <label>
+            Core diameter (mm)
+            <input type="number" name="core_mm" min="1" required placeholder="e.g. 10"/>
+          </label>
+
+          <label>
+            Quantity (rolls)
+            <input type="number" name="quantity" min="1" required placeholder="e.g. 100"/>
+          </label>
+
+          <label>
+            Expected delivery date
+            <input type="date" name="delivery_date" required />
+          </label>
+
+          <label>
+            Company / Name
+            <input type="text" name="customer_name" required placeholder="e.g. Company Name"/>
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="e.g. email@example.com"/>
+          </label>
+
+          <label>
+            Phone
+            <input type="tel" name="phone" placeholder="e.g. +91 123456789"/>
+          </label>
+
+          <label class="full-width">
+            Delivery Address
+            <textarea name="address" rows="3" placeholder="e.g. 123 Main St, City, State"></textarea>
+          </label>
+
+          <label class="full-width">
+            Additional notes
+            <textarea name="notes" rows="3" placeholder="e.g. Urgent, Special Packaging"></textarea>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Submit Order</button>
+          <div id="order-status" class="status" aria-live="polite"></div>
+        </div>
+      </form>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact-section">
+      <h3>Contact Us</h3>
+      <p class="muted">Questions or wholesale inquiries? Send us a message.</p>
+
+  <form id="contact-form" class="form reveal" method="POST" action="https://formsubmit.co/padayattilbettyalan@gmail.com">
+        <div class="form-grid">
+          <label>
+            Name
+            <input type="text" name="name" required placeholder="Name"/>
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="e.g. email@example.com"/>
+          </label>
+
+          <label class="full-width">
+            Message
+            <textarea name="message" rows="4" required placeholder="Your message..."></textarea>
+          </label>
+        </div>
+
+        <input type="hidden" name="_subject" value="New submission!">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_autoresponse" value="Thank you for contacting Ezzah Enterprises. We have received your message and will get back to you shortly.">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Send Message</button>
+          <div id="contact-status" class="status" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-grid">
+      <div class="footer-col about">
+        <h4>Ezzah Enterprises</h4>
+        <p class="muted">Premium thermal receipt rolls — trusted for clear prints and reliable delivery. Bulk pricing and express dispatch available.</p>
+        <div class="follow-block">
+          <h5>Follow us</h5>
+          <div class="social-links centered">
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a4 4 0 00-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 011-1h3V2z" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col links">
+        <h5>Quick links</h5>
+        <ul>
+          <li><a href="#showcase">Products</a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact">
+        <h5>Reach us at</h5>
+        <div class="contact-details">
+          <p class="muted">Millupady, Panayikulam, Aluva, Ernakulam, Kerala</p>
+          <div class="contact-line">
+            <strong>Phone:</strong>
+            <div class="contact-values">
+              <span>+91 9074971647, +91 9995693122</span>
+            </div>
+          </div>
+          <div class="contact-line">
+            <strong>Email:</strong>
+            <div class="contact-values">
+              <a href="mailto:ezzahenterprises@gmail.com">ezzahenterprises@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col social">
+        <div class="map-wrap small-map">
+          <iframe title="Ezzah Enterprises location" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1963.9756354737287!2d76.29791161838533!3d10.103074687418271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDA2JzExLjAiTiA3NsKwMTcnNTIuOSJF!5e0!3m2!1sen!2sin!4v1762067947415!5m2!1sen!2sin"></iframe>
+        </div>
+      </div>
+      <div class="footer-bottom" role="contentinfo">
+        <small>© 2025 Ezzah Enterprises. All Rights Reserved</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for success messages -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div id="modal-message">Message</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <!-- decorative blobs -->
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+</body>
+</html>
